@@ -36,10 +36,41 @@ body {
   padding-bottom: 10px;
 }
 
+.photo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .photo {
   width: 200px;
   border-radius: 5%; 
   border-radius: 12px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 10px;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; 
+  padding: 8px 14px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #111;
+  transition: all 0.25s ease;
+}
+
+.download-btn:active {
+  transform: scale(0.97);
+  opacity: 0.85;
 }
 
 .contacts {
@@ -58,8 +89,9 @@ body {
   transition: opacity 0.2s e;
 }
 
-.contacts-item:hover {
-  opacity: 0.7;
+.contacts-item:active,
+.certificate-item:active {
+  opacity: 0.6;
 }
 
 .socials-icons {
@@ -178,16 +210,23 @@ body {
   font-size: 20px;
 }
 
+.certificate {
+  margin-bottom: 30px;
+}
+
 .certificate-item {
-  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000000;
   transition: opacity 0.2s ease;
 }
 
-.certificate-item:hover {
-  opacity: 0.7;
+.footer {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
 }
-
-
 
 @media (max-width: 900px) {
   body {
@@ -195,23 +234,69 @@ body {
   }
 
   .cv {
+    grid-template-columns: 1fr;
     width: 100%;
     min-height: auto;
     border: none;
     box-shadow: none;
   }
 
-  .cv {
-    grid-template-columns: 1fr;
+  .sidebar {
+    text-align: center;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-@media (max-width: 768px) {
-  .cv {
+@media (max-width: 480px) {
+  body {
+    background: #ffffff;
+  }
+
+  .job {
+    display: inline-grid;
     grid-template-columns: 1fr;
   }
 
-  .sidebar {
+  .skills-list {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .skills {
     text-align: center;
+  }
+
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+  .download-btn:hover {
+    background-color: #200847;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  .download-icon{
+    stroke: #ffffff;
+  }
+
+  .contacts-item:hover {
+    opacity: 0.7;
+  }
+
+  .certificate-item:hover {
+    opacity: 0.7;
+  }
+
+  .download-btn,
+  .contacts-item,
+  .certificate-item {
+    cursor: pointer;
   }
 }
