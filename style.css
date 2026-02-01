@@ -1,0 +1,302 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #efe7f0;
+  font-family: Arial, sans-serif;
+}
+
+.cv {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  width: 794px;
+  min-height: 1123px;
+  background: #ffffff;
+  border: 2px solid #000;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar {
+  background: #532e8f;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.profile h1 {
+  font-size: 25px;
+}
+
+.profile h2 {
+  font-weight: normal;
+  font-size: 18px;
+  opacity: 0.9;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.photo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.photo {
+  width: 200px;
+  border-radius: 5%; 
+  border-radius: 12px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 10px;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; 
+  padding: 8px 14px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #111;
+  transition: all 0.25s ease;
+}
+
+.download-btn:active {
+  transform: scale(0.97);
+  opacity: 0.85;
+}
+
+.contacts {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.contacts-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s e;
+}
+
+.contacts-item:active,
+.certificate-item:active {
+  opacity: 0.6;
+}
+
+.socials-icons {
+  width: 22px;
+  flex-shrink: 0;
+}
+
+.languages {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.languages h3 {
+  opacity: 0.9;
+}
+
+.languages ul {
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
+
+.languages li {
+  margin-bottom: 10px;
+}
+
+.education h3 {
+  opacity: 0.9;
+}
+
+.education-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.education-item {
+  margin-bottom: 18px;
+}
+
+.education-university{
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.education-degree {
+  font-size: 16px;
+  margin: 0;
+}
+
+.education-years {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.content {
+  padding: 0 40px 0;
+  background: #fff;
+}
+
+.content h3 {
+  border-bottom: 2px solid #532e8f;
+  padding-bottom: 10px;
+}
+
+.experience {
+  margin-top: 30px;
+}
+
+.job {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 10px;
+}
+
+.job-info h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.job-title {
+  margin: 5px 0 10px;
+}
+
+.job-subtitle {
+  margin: 0px 0 5px;
+  font-weight: 600;
+}
+
+.job-info ul {
+  margin: 0;
+  padding-left: 15px;
+}
+
+.job-info li {
+  margin-bottom: 6px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+
+.skills-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.skills-list i {
+  font-size: 20px;
+}
+
+.certificate {
+  margin-bottom: 30px;
+}
+
+.certificate-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000000;
+  transition: opacity 0.2s ease;
+}
+
+.footer {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
+
+@media (max-width: 900px) {
+  body {
+    align-items: flex-start;
+  }
+
+  .cv {
+    grid-template-columns: 1fr;
+    width: 100%;
+    min-height: auto;
+    border: none;
+    box-shadow: none;
+  }
+
+  .sidebar {
+    text-align: center;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background: #ffffff;
+  }
+
+  .job {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+  }
+
+  .skills-list {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .skills {
+    text-align: center;
+  }
+
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+  .download-btn:hover {
+    background-color: #200847;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  .download-icon{
+    stroke: #ffffff;
+  }
+
+  .contacts-item:hover {
+    opacity: 0.7;
+  }
+
+  .certificate-item:hover {
+    opacity: 0.7;
+  }
+
+  .download-btn,
+  .contacts-item,
+  .certificate-item {
+    cursor: pointer;
+  }
+}
