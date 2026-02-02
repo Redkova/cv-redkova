@@ -1,3 +1,5 @@
-/Alexandra_Redkova_CV.pdf
-  Content-Type: application/pdf
-  Content-Disposition: attachment
+[[headers]]
+  for = "Alexandra_Redkova_CV.pdf"
+  [headers.values]
+    Content-Type = "application/pdf"
+    Content-Disposition = "attachment"
