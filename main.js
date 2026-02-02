@@ -7,3 +7,12 @@
 //   link.click();
 //   document.body.removeChild(link);
 // });
+
+function downloadCV() {
+  const a = document.createElement('a');
+  a.href = 'Alexandra_Redkova_CV.pdf';
+  a.download = 'Alexandra_Redkova_CV.pdf';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
