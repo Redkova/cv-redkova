@@ -191,6 +191,61 @@ body {
   margin-bottom: 6px;
 }
 
+.projects-list {
+  padding-left: 20px;
+}
+
+.project {
+  padding-left: 5px;
+  margin-bottom: 20px;
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.project-year {
+  font-size: 13px;
+  font-weight: 400;
+  color: #777;
+}
+
+.project-description {
+  margin: 0 0 6px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.project-stack {
+  margin: 0 0 7px;
+  font-size: 13px;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.project-links a {
+  color: #532e8f;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.project-links a:hover {
+  opacity: 0.7;
+}
+
 .skills-list {
   list-style: none;
   padding: 0;
@@ -256,6 +311,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .footer {
+    width: 100%;
+    text-align: center;
   }
 }
 
