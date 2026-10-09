@@ -246,6 +246,25 @@ body {
   opacity: 0.7;
 }
 
+.certificate {
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.certificate-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000000;
+  transition: opacity 0.2s ease;
+}
+
+.skills {
+  margin-bottom: 30px;
+}
+
 .skills-list {
   list-style: none;
   padding: 0;
@@ -267,21 +286,6 @@ body {
   width: 20px;
   flex-shrink: 0;
   font-size: 20px;
-}
-
-.certificate {
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.certificate-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #000000;
-  transition: opacity 0.2s ease;
 }
 
 .footer {
@@ -329,16 +333,16 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .skills {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
   .skills-list {
     display: inline-grid;
     grid-template-columns: 1fr;
     gap: 6px;
   }
-
-  .skills {
-    text-align: center;
-  }
-
 }
 
 @media (hover: hover) and (pointer: fine) {
