@@ -31,7 +31,7 @@ body {
 
 .photo {
   width: 200px;
-  border-radius: 5%; 
+  border-radius: 5%;
   border-radius: 12px;
 }
 
@@ -56,7 +56,7 @@ body {
 .download-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px; 
+  gap: 6px;
   padding: 8px 14px;
   text-align: center;
   font-size: 14px;
@@ -111,7 +111,7 @@ body {
 .languages ul {
   list-style: none;
   padding: 0;
-  margin: 0
+  margin: 0;
 }
 
 .languages li {
@@ -132,7 +132,7 @@ body {
   margin-bottom: 18px;
 }
 
-.education-university{
+.education-university {
   margin-top: 0;
   margin-bottom: 5px;
   font-size: 18px;
@@ -193,6 +193,7 @@ body {
 
 .projects-list {
   padding-left: 20px;
+  margin: 0;
 }
 
 .project {
@@ -247,7 +248,10 @@ body {
 }
 
 .certificate {
+  margin-bottom: 20px;
+}
 
+.certificate-wrapper {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -270,7 +274,7 @@ body {
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 4px 16px;
 }
 
@@ -296,6 +300,7 @@ body {
 
 @media (max-width: 900px) {
   body {
+    background: #ffffff;
     align-items: flex-start;
   }
 
@@ -324,10 +329,6 @@ body {
 }
 
 @media (max-width: 480px) {
-  body {
-    background: #ffffff;
-  }
-
   .job {
     display: inline-grid;
     grid-template-columns: 1fr;
@@ -335,25 +336,23 @@ body {
 
   .skills {
     margin-bottom: 10px;
-    text-align: center;
   }
 
   .skills-list {
     display: inline-grid;
-    grid-template-columns: 1fr;
-    gap: 6px;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
   }
 }
 
 @media (hover: hover) and (pointer: fine) {
-
   .download-btn:hover {
     background-color: #200847;
     color: #fff;
     transform: translateY(-2px);
   }
 
-  .download-icon{
+  .download-icon {
     stroke: #ffffff;
   }
 
