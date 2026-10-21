@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alexandra Redkova</title>
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
@@ -29,6 +28,27 @@
     />
   </head>
   <body>
+    <header class="header">
+      <div class="language-switcher" aria-label="Choose language">
+        <button
+          class="language-btn is-active"
+          type="button"
+          data-lang="en"
+          aria-pressed="true"
+        >
+          EN
+        </button>
+
+        <button
+          class="language-btn"
+          type="button"
+          data-lang="sv"
+          aria-pressed="false"
+        >
+          SV
+        </button>
+      </div>
+    </header>
     <div class="cv">
       <aside class="sidebar">
         <div class="profile">
@@ -41,7 +61,7 @@
           </div>
         </div>
         <h1 class="name">Alexandra Redkova</h1>
-        <h2 class="title">Front-end Developer</h2>
+        <h2 class="title" data-i18n="jobTitle">Front-end Developer</h2>
 
         <div class="contacts">
           <div class="contacts-wrap">
@@ -106,7 +126,12 @@
             </a>
           </div>
           <div class="button-wrapper">
-            <a href="/Alexandra_Redkova_CV.pdf" download class="download-btn">
+            <a
+              href="/Alexandra_Redkova_CV_EN.pdf"
+              download
+              class="download-btn"
+              id="download-cv"
+            >
               <svg
                 class="download-icon"
                 width="20"
@@ -122,25 +147,25 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              Download CV
+              <span data-i18n="downloadCv">Download CV</span>
             </a>
           </div>
         </div>
 
         <section class="languages">
-          <h3>Languages</h3>
+          <h3 data-i18n="languages">Languages</h3>
           <ul>
-            <li>English - fluent</li>
-            <li>Swedish - fluent</li>
-            <li>Russian - native</li>
+            <li data-i18n="englishLevel">English - fluent</li>
+            <li data-i18n="swedishLevel">Swedish - fluent</li>
+            <li data-i18n="russianLevel">Russian - native</li>
           </ul>
         </section>
         <section class="education">
-          <h3>Education</h3>
+          <h3 data-i18n="education">Education</h3>
           <ul class="education-list">
             <li class="education-item">
               <p class="education-university">Belarusian State University</p>
-              <p class="education-degree">
+              <p class="education-degree" data-i18n="bachelorDegree">
                 Bachelor&rsquo;s Degree in Management and Economics
               </p>
               <span class="education-years">2013 &ndash; 2017</span>
@@ -148,7 +173,7 @@
 
             <li class="education-item">
               <p class="education-university">Belarusian State University</p>
-              <p class="education-degree">
+              <p class="education-degree" data-i18n="masterDegree">
                 Master&rsquo;s Degree in Economics and Management
               </p>
               <span class="education-years">2017 &ndash; 2018</span>
@@ -156,129 +181,15 @@
 
             <li class="education-item">
               <p class="education-university">RS School</p>
-              <p class="education-degree">
+              <p class="education-degree" data-i18n="frontendCourse">
                 JavaScript / React Frontend Developer
               </p>
               <span class="education-years">2024 &ndash; 2026</span>
             </li>
           </ul>
         </section>
-      </aside>
-
-      <main class="content">
-        <section class="experience">
-          <h3>Work Experience</h3>
-          <div class="job">
-            <div class="job-date">2024 &ndash; 2026</div>
-            <div class="job-info">
-              <h2>RS School</h2>
-              <p class="job-title">Student Frontend Developer</p>
-              <p class="job-subtitle">Development Experience:</p>
-              <ul>
-                <li>Developing application code</li>
-                <li>Debugging and resolving technical issues</li>
-                <li>
-                  Reviewing and validating code for correctness and quality
-                </li>
-                <li>Refactoring and improving existing codebases</li>
-                <li>Optimizing code for better performance and readability</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section class="projects">
-          <h3>Projects</h3>
-          <ul class="projects-list">
-            <li class="project">
-              <div class="project-info">
-                <h4 class="project-title">
-                  Movie Search App
-                  <span class="project-year">2026</span>
-                </h4>
-                <p class="project-description">
-                  Implemented movie search, filtering, pagination, detailed
-                  movie information, API integration and internationalization
-                  with next-intl
-                </p>
-                <p class="project-stack">
-                  Stack: React, TypeScript, Next.js, next-intl
-                </p>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/Redkova/react-project/tree/nextjs-ssr"
-                    target="_blank"
-                    >GitHub</a
-                  >
-                  <span>&#124;</span>
-                  <a href="https://find-movie-rs.netlify.app" target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-            </li>
-            <li class="project">
-              <div class="project-info">
-                <h4 class="project-title">
-                  Swagger Editor App — Team Project
-                  <span class="project-year">2026</span>
-                </h4>
-                <p class="project-description">
-                  React application for editing and testing OpenAPI
-                  specifications. Implemented authentication, API request
-                  execution, Swagger Editor/Viewer, request history, analytics,
-                  and responsive UI.
-                </p>
-                <p class="project-stack">
-                  Stack: React, TypeScript, Next.js, Vite
-                </p>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/AleksPanda/swagger-editor-app/tree/develop"
-                    target="_blank"
-                    >GitHub</a
-                  >
-                  <span>&#124;</span>
-                  <a
-                    href="https://swagger-editor-app-a-team.netlify.app/en"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-            </li>
-            <li class="project">
-              <div class="project-info">
-                <h4 class="project-title">
-                  Nonograms
-                  <span class="project-year">2025</span>
-                </h4>
-                <p class="project-description">
-                  Interactive puzzle game built with Vanilla JavaScript,
-                  featuring dynamic game logic, user interactions, and
-                  responsive UI.
-                </p>
-                <p class="project-stack">Stack: JavaScript, HTML, CSS</p>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/Redkova/Nonograms/tree/main/nonograms"
-                    target="_blank"
-                    >GitHub</a
-                  >
-                  <span>&#124;</span>
-                  <a
-                    href="https://rolling-scopes-school.github.io/redkova-JSFE2024Q4/nonograms/index.html"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-
         <section class="certificate">
-          <h3>Certificates</h3>
+          <h3 data-i18n="certificates">Certificates</h3>
           <div class="certificate-wrapper">
             <a
               href="https://app.rs.school/certificate/slbthkwr"
@@ -345,6 +256,163 @@
               JavaScript/Front-end 2024Q4
             </a>
           </div>
+        </section>
+      </aside>
+
+      <main class="content">
+        <section class="experience">
+          <h3 data-i18n="workExperience">Work Experience</h3>
+          <div class="job">
+            <div class="job-date">2018 &ndash; 2021</div>
+            <div class="job-info">
+              <h2>NT Technology</h2>
+              <p class="job-title">Account Manager</p>
+              <p class="job-subtitle" data-i18n="accountExperience">
+                Responsibilities:
+              </p>
+              <ul>
+                <li data-i18n="accountTask1">
+                  Managed client relationships and daily communication.
+                </li>
+                <li data-i18n="accountTask2">
+                  Prepared commercial proposals and project briefs.
+                </li>
+                <li data-i18n="accountTask3">
+                  Participated in client meetings and negotiations.
+                </li>
+                <li data-i18n="accountTask4">
+                  Coordinated work between project teams and external partners.
+                </li>
+                <li data-i18n="accountTask5">
+                  Monitored advertising campaign performance and KPIs.
+                </li>
+                <li data-i18n="accountTask6">
+                  Analyzed campaign results using Google Analytics, Yandex
+                  Metrica, and audit tools.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="job">
+            <div class="job-date">2024 &ndash; 2026</div>
+            <div class="job-info">
+              <h2>RS School</h2>
+              <p class="job-title">Student Frontend Developer</p>
+              <p class="job-subtitle" data-i18n="developmentExperience">
+                Development Experience:
+              </p>
+              <ul>
+                <li data-i18n="task1">Developing application code</li>
+                <li data-i18n="task2">
+                  Debugging and resolving technical issues
+                </li>
+                <li data-i18n="task3">
+                  Reviewing and validating code for correctness and quality
+                </li>
+                <li data-i18n="task4">
+                  Refactoring and improving existing codebases
+                </li>
+                <li data-i18n="task5">
+                  Optimizing code for better performance and readability
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="projects">
+          <h3 data-i18n="projects">Projects</h3>
+          <ul class="projects-list">
+            <li class="project">
+              <div class="project-info">
+                <h4 class="project-title">
+                  Movie Search App
+                  <span class="project-year">2026</span>
+                </h4>
+                <p class="project-description" data-i18n="movieDescription">
+                  Implemented movie search, filtering, pagination, detailed
+                  movie information, API integration and internationalization
+                  with next-intl
+                </p>
+                <p class="project-stack">
+                  Stack: React, TypeScript, Next.js, next-intl
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Redkova/react-project/tree/nextjs-ssr"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                  <span>&#124;</span>
+                  <a
+                    href="https://find-movie-rs.netlify.app"
+                    target="_blank"
+                    data-i18n="liveDemo"
+                    >Live Demo</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project-info">
+                <h4 class="project-title">
+                  Swagger Editor App — Team Project
+                  <span class="project-year">2026</span>
+                </h4>
+                <p class="project-description" data-i18n="swaggerDescription">
+                  React application for editing and testing OpenAPI
+                  specifications. Implemented authentication, API request
+                  execution, Swagger Editor/Viewer, request history, analytics,
+                  and responsive UI.
+                </p>
+                <p class="project-stack">
+                  Stack: React, TypeScript, Next.js, Vite
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/AleksPanda/swagger-editor-app/tree/develop"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                  <span>&#124;</span>
+                  <a
+                    href="https://swagger-editor-app-a-team.netlify.app/en"
+                    target="_blank"
+                    data-i18n="liveDemo"
+                    >Live Demo</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project-info">
+                <h4 class="project-title">
+                  Nonograms
+                  <span class="project-year">2025</span>
+                </h4>
+                <p class="project-description" data-i18n="nonogramsDescription">
+                  Interactive puzzle game built with Vanilla JavaScript,
+                  featuring dynamic game logic, user interactions, and
+                  responsive UI.
+                </p>
+                <p class="project-stack">Stack: JavaScript, HTML, CSS</p>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Redkova/Nonograms/tree/main/nonograms"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                  <span>&#124;</span>
+                  <a
+                    href="https://rolling-scopes-school.github.io/redkova-JSFE2024Q4/nonograms/index.html"
+                    target="_blank"
+                    data-i18n="liveDemo"
+                    >Live Demo</a
+                  >
+                </div>
+              </div>
+            </li>
+          </ul>
         </section>
 
         <section class="skills">
@@ -468,6 +536,6 @@
     <footer class="footer">
       <p>© 2026 Alexandra Redkova</p>
     </footer>
-    <script src="main.js"></script>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
