@@ -233,10 +233,6 @@ body {
     margin: 0;
     padding-left: 15px;
   }
-
-  li {
-    margin-bottom: 6px;
-  }
 }
 
 .job-title {
@@ -245,7 +241,11 @@ body {
 
 .job-subtitle {
   margin: 0 0 5px;
-  font-weight: 600;
+}
+
+.job-responsibility {
+  margin-bottom: 6px;
+  font-size: 14px;
 }
 
 .projects-list {
