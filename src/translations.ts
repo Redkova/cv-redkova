@@ -89,13 +89,13 @@ export const translations = {
       'Implementering av routning, tillståndshantering och formulärvalidering',
     projects: 'Projekt',
     movieDescription:
-      'Implementerade filmsökning, filtrering, sidindelning, detaljerad filminformation, API-integration och internationalisering med next-intl.',
+      'Implementerade filmsökning, filtrering, paginering, detaljerad filminformation, API-integration och internationalisering med next-intl.',
     movieStack: 'Teknikstack: React, TypeScript, Next.js, next-intl',
     swaggerDescription:
-      'React-applikation för att redigera och testa OpenAPI-specifikationer. Implementerade autentisering, körning av API-anrop, Swagger Editor/Viewer, historik över anrop, analys och responsivt gränssnitt.',
+      'React-applikation för att redigera och testa OpenAPI-specifikationer. Implementerade autentisering, körning av API-anrop, Swagger Editor/Viewer, historik över anrop, analysfunktioner och ett responsivt användargränssnitt.',
     swaggerStack: 'Teknikstack: React, TypeScript, Next.js, Vite',
     nonogramsDescription:
-      'Interaktivt pusselspel byggt med Vanilla JavaScript, med dynamisk spellogik, användarinteraktioner och responsivt gränssnitt.',
+      'Interaktivt pusselspel utvecklat med Vanilla JavaScript, med dynamisk spellogik, användarinteraktioner och responsivt gränssnitt.',
     nonogramsStack: 'Teknikstack: JavaScript, HTML, CSS',
     liveDemo: 'Live-demo',
     certificates: 'Certifikat',
