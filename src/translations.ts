@@ -25,11 +25,15 @@ export const translations = {
       'Analyzed campaign results using Google Analytics, Yandex Metrica, and audit tools',
     studentTitle: 'Student Frontend Developer',
     developmentExperience: 'Development Experience:',
-    task1: 'Developing application features',
-    task2: 'Debugging and resolving technical issues',
-    task3: 'Reviewing code for correctness, quality, and maintainability',
-    task4: 'Building and improving web applications',
-    task5: 'Implementing UI components and application logic',
+    task1:
+      'Developing application features using JavaScript, TypeScript, and React',
+    task2: 'Building responsive and interactive user interfaces',
+    task3:
+      'Writing and reviewing code with a focus on correctness, readability, and maintainability',
+    task4: 'Debugging and resolving technical issues',
+    task5: 'Collaborating with team members on development projects',
+    task6: 'Integrating REST APIs',
+    task7: 'Implementing routing, state management, and form validation',
     projects: 'Projects',
     movieDescription:
       'Implemented movie search, filtering, pagination, detailed movie information, API integration and internationalization with next-intl',
@@ -70,12 +74,16 @@ export const translations = {
 
     studentTitle: 'Frontendutvecklare under utbildning',
     developmentExperience: 'Utvecklingserfarenhet:',
-    task1: 'Utveckling av nya funktioner i applikationer',
-    task2: 'Felsökning och åtgärdande av tekniska problem',
+    task1:
+      'Utveckling av nya funktioner i applikationer med JavaScript, TypeScript och React',
+    task2: 'Utveckling av responsiva och interaktiva användargränssnitt',
     task3:
-      'Kodgranskning med fokus på korrekthet, kvalitet och underhållbarhet',
-    task4: 'Utveckling och förbättring av webbapplikationer',
-    task5: 'Implementering av UI-komponenter och applikationslogik',
+      'Skrivning och granskning av kod med fokus på korrekthet, läsbarhet och långsiktig underhållbarhet',
+    task4: 'Felsökning och åtgärdande av tekniska problem',
+    task5: 'Samarbete med teammedlemmar i utvecklingsprojekt',
+    task6: 'Integration av REST-API:er',
+    task7:
+      'Implementering av routning, tillståndshantering och formulärvalidering',
     projects: 'Projekt',
     movieDescription:
       'Implementerade filmsökning, filtrering, sidindelning, detaljerad filminformation, API-integration och internationalisering med next-intl.',

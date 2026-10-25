@@ -217,35 +217,40 @@ body {
 }
 
 .job {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.job-info {
-  h2 {
-    margin: 0;
-    font-size: 16px;
-  }
-
-  ul {
-    margin: 0;
-    padding-left: 15px;
-  }
+  margin-bottom: 15px;
 }
 
 .job-title {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.job-companyName {
   margin: 5px 0 10px;
+  font-size: 15px;
+}
+
+.job-date {
+  margin: 0;
+  color: $color-muted;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .job-subtitle {
   margin: 0 0 5px;
+  font-size: 15px;
+}
+
+.job-responsibilities {
+  margin: 0;
+  padding-left: 25px;
 }
 
 .job-responsibility {
   margin-bottom: 6px;
-  font-size: 14px;
+  line-height: 1.2;
 }
 
 .projects-list {
@@ -394,11 +399,6 @@ body {
 }
 
 @media (max-width: $breakpoint-mobile) {
-  .job {
-    display: inline-grid;
-    grid-template-columns: 1fr;
-  }
-
   .skills {
     margin-bottom: 10px;
   }
