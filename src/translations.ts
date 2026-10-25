@@ -11,7 +11,8 @@ export const translations = {
     education: 'Education',
     bachelorDegree: "Bachelor's Degree in Management and Economics",
     masterDegree: "Master's Degree in Economics and Management",
-    frontendCourse: 'JavaScript / React Frontend Developer',
+    javascriptCourse: 'JavaScript / Frontend Developer',
+    reactCourse: 'React Developer',
     workExperience: 'Work Experience',
     accountManager: 'Account Manager',
     accountExperience: 'Key Responsibilities:',
@@ -49,7 +50,7 @@ export const translations = {
     techStack: 'Tech Stack',
   },
   sv: {
-    jobTitle: 'Front-end utvecklare',
+    jobTitle: 'Frontendutvecklare',
     downloadCv: 'Ladda ner CV',
     languages: 'Språkkunskaper',
     englishLevel: 'Engelska – flytande',
@@ -58,14 +59,16 @@ export const translations = {
     education: 'Utbildning',
     bachelorDegree: 'Kandidatexamen i management och ekonomi',
     masterDegree: 'Masterexamen i ekonomi och management',
-    frontendCourse: 'JavaScript / React – frontendutvecklare',
+    javascriptCourse: 'JavaScript frontendutvecklare',
+    reactCourse: 'React utvecklare',
     workExperience: 'Arbetslivserfarenhet',
 
     accountManager: 'Kundansvarig',
     accountExperience: 'Huvudsakliga arbetsuppgifter:',
-    accountTask1: 'Ansvarade för kundrelationer och daglig kundkommunikation',
+    accountTask1:
+      'Ansvarade för kundrelationer och den dagliga kommunikationen med kunder',
     accountTask2: 'Tog fram kommersiella offerter och projektbeskrivningar',
-    accountTask3: 'Deltog i kundmöten och förhandlingar',
+    accountTask3: 'Deltog i kundmöten och affärsförhandlingar',
     accountTask4:
       'Samordnade arbetet mellan projektteam och externa samarbetspartner',
     accountTask5: 'Följde upp annonskampanjers resultat och KPI:er',
