@@ -11,6 +11,9 @@ export const translations = {
     education: 'Education',
     bachelorDegree: "Bachelor's Degree in Management and Economics",
     masterDegree: "Master's Degree in Economics and Management",
+    swedishSfi: 'Swedish for Immigrants (SFI), Course D',
+    swedishUniversity:
+      'Swedish Language Programme for Students with Foreign Educational Background',
     javascriptCourse: 'JavaScript / Frontend Developer',
     reactCourse: 'React Developer',
     workExperience: 'Work Experience',
@@ -59,6 +62,9 @@ export const translations = {
     education: 'Utbildning',
     bachelorDegree: 'Kandidatexamen i management och ekonomi',
     masterDegree: 'Masterexamen i ekonomi och management',
+    swedishSfi: 'Svenska för invandrare (SFI), kurs D',
+    swedishUniversity:
+      'Behörighetsgivande utbildning i svenska för studerande med utländsk förutbildning',
     javascriptCourse: 'JavaScript frontendutvecklare',
     reactCourse: 'React utvecklare',
     workExperience: 'Arbetslivserfarenhet',
